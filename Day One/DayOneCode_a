@@ -1,0 +1,13 @@
+# define variable to capture offsets read in from file.
+count = 0
+
+# opens file containing offsets.
+file_parser = open("input.txt", "r")
+
+for line in file_parser:
+    count = count + int(line)
+
+print(count)
+
+# closes file containing offsets.
+file_parser.close()
